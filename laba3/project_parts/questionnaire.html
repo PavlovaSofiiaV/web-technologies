@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 4. Анкета</title>
+</head>
+<body bgcolor="#f8d7e5">
+<div align="center">
+
+    <form action="questionnaire.html" method="get">
+
+        <table width="700" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffdbdb">
+            <tr>
+                <td><img src="../img/4.jpg"width="700" height="300" alt="Анкета студента"></td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#ffdbdb" align="center">
+                    <br>
+                    <fieldset>
+                        <legend><img src="../img/2.jpg" width="32" height="32" alt=""> <b>Особисті дані</b></legend>
+                        <table cellpadding="6" cellspacing="0">
+                            <tr>
+                                <td align="right"><label for="firstname">Ім'я:</label></td>
+                                <td><input type="text" id="firstname" name="firstname" label for="firstname"placeholder="Введіть ім'я" required tabindex="1"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="lastname">Прізвище:</label></td>
+                                <td><input type="text" id="lastname" name="lastname" value="" placeholder="Введіть прізвище" required tabindex="2"></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="birthday">Дата народження:</label></td>
+                                <td><input type="date" id="birthday" name="birthday" value="" tabindex="3"></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Стать:</td>
+                                <td>
+                                    <input type="radio" id="female" name="gender" value="female" tabindex="4">
+                                    <label for="female">Жінка</label>
+                                    <input type="radio" id="male" name="gender" value="male" tabindex="5">
+                                    <label for="male">Чоловік</label>
+                                    <input type="radio" id="other" name="gender" value="other" tabindex="6">
+                                    <label for="other">Інше</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- 2. Контакти -->
+            <tr>
+                <td bgcolor="#ffeef3" align="center">
+                    <br>
+                    <fieldset>
+                        <legend><img src="../img/3.jpg" width="32" height="32" alt=""> <b>Контакти та вхід</b></legend>
+                        <table cellpadding="6" cellspacing="0">
+                            <tr>
+                                <td align="right"><label for="email">Email:</label></td>
+                                <td>
+                                    <input type="email" id="email" name="email" value="" placeholder="name@example.com"
+                                           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                                           title="Введіть email у форматі name@example.com"
+                                           autocomplete="off" required tabindex="7">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="phone">Телефон:</label></td>
+                                <td>
+                                    <input type="tel" id="phone" name="phone" value="" placeholder="+380501234567"
+                                           pattern="\+380[0-9]{9}"
+                                           title="Формат: +380 і 9 цифр" tabindex="8">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="password">Пароль:</label></td>
+                                <td>
+                                    <input type="password" id="password" name="password" value="" placeholder="6 символів"
+                                           pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{6}"
+                                           title="Рівно 6 символів: велика літера, мала літера і цифра"
+                                           required tabindex="9">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- 3. Навчання -->
+            <tr>
+                <td bgcolor="#ffdbdb" align="center">
+                    <br>
+                    <fieldset>
+                        <legend><img src="../img/5.jpg" width="32" height="32" alt=""> <b>Навчання</b></legend>
+                        <table cellpadding="6" cellspacing="0">
+                            <tr>
+                                <td align="right"><label for="course">Курс:</label></td>
+                                <td>
+                                    <select id="course" name="course" tabindex="10">
+                                        <option value="1">1 курс</option>
+                                        <option value="2" >2 курс</option>
+                                        <option value="3" selected>3 курс</option>
+                                        <option value="4">4 курс</option>
+                                        <option value="5">5 курс</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">Форма навчання:</td>
+                                <td>
+                                    <input type="radio" id="full" name="study_form" value="full" tabindex="11">
+                                    <label for="full">Денна</label>
+                                    <input type="radio" id="part" name="study_form" value="part" checked tabindex="12">
+                                    <label for="part">Заочна</label>
+                                    <input type="radio" id="dist" name="study_form" value="dist" tabindex="13">
+                                    <label for="dist">Дистанційна</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="top"><label for="languages">Мови програмування:<br>(можна декілька)</label></td>
+                                <td>
+                                    <select id="languages" name="languages" multiple tabindex="14">
+                                        <option value="html">HTML</option>
+                                        <option value="css">CSS</option>
+                                        <option value="js">JavaScript</option>
+                                        <option value="python">Python</option>
+                                        <option value="java">Java</option>
+                                        <option value="cpp">C++</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="subject">Улюблений предмет:</label></td>
+                                <td>
+                                    <select id="subject" name="subject" tabindex="15">
+                                        <optgroup label="Програмування">
+                                            <option value="web">Веб-технології</option>
+                                            <option value="prog">Основи програмування</option>
+                                            <option value="db">Бази даних</option>
+                                        </optgroup>
+                                        <optgroup label="Математика">
+                                            <option value="algebra">Алгебра</option>
+                                            <option value="analysis">Математичний аналіз</option>
+                                            <option value="discrete">Дискретна математика</option>
+                                        </optgroup>
+                                        <optgroup label="Мови">
+                                            <option value="english">Англійська</option>
+                                            <option value="german">Німецька</option>
+                                            <option value="ukr">Українська</option>
+                                        </optgroup>
+                                        <optgroup label="Інше">
+                                            <option value="history">Історія</option>
+                                            <option value="pe">Фізкультура</option>
+                                            <option value="philosophy">Філософія</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="city">Місто:</label></td>
+                                <td>
+                                    <input list="cities" id="city" name="city" value="" placeholder="Почніть вводити" tabindex="16">
+                                    <datalist id="cities">
+                                        <option value="Чернівці">
+                                        <option value="Київ">
+                                        <option value="Львів">
+                                        <option value="Одеса">
+                                        <option value="Харків">
+                                    </datalist>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- 4. Інтереси -->
+            <tr>
+                <td bgcolor="#ffeef3" align="center">
+                    <br>
+                    <fieldset>
+                        <legend><img src="../img/6.jpg" width="32" height="32" alt=""> <b>Інтереси</b></legend>
+                        <table cellpadding="6" cellspacing="0">
+                            <tr>
+                                <td align="right">Чим захоплюєтесь:</td>
+                                <td>
+                                    <input type="checkbox" id="music" name="hobby" value="music" tabindex="17">
+                                    <label for="music">Музика</label>
+                                    <input type="checkbox" id="sport" name="hobby" value="sport" tabindex="18">
+                                    <label for="sport">Спорт</label>
+                                    <input type="checkbox" id="travel" name="hobby" value="travel" tabindex="19">
+                                    <label for="travel">Подорожі</label>
+                                    <input type="checkbox" id="games" name="hobby" value="games" tabindex="20">
+                                    <label for="games">Ігри</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right" valign="top"><label for="about">Про себе:</label></td>
+                                <td><textarea id="about" name="about" rows="5" cols="35" placeholder="Кілька речень про себе" tabindex="21"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label for="audio">Улюблені пісні:</label></td>
+                                <td><input type="file" id="audio" name="audio" value="" accept="audio/*" multiple tabindex="22"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                </td>
+            </tr>
+
+            <!-- кнопки -->
+            <tr>
+                <td bgcolor="#ff8fb1" align="center">
+                    <br>
+                    <button type="submit" name="send" value="send" tabindex="23">Відправити</button>
+                    <button type="reset" name="clear" value="clear" tabindex="24">Очистити</button>
+                    <br><br>
+                    <img src="../img/7.jpg" width="96" height="32" alt="">
+                    <br><br>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+</body>
+</html>
