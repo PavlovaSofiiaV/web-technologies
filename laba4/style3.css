@@ -1,0 +1,22 @@
+a{
+    color: rebeccapurple;
+}
+.main-link{
+    color: green;
+}
+
+ul li ul{
+    list-style: none;
+}
+
+.vegetables{
+    list-style-image: url("4.jpg");
+}
+
+.berrry {
+    text-decoration: none;
+    list-style: square;
+}
+ol {
+    list-style-position: inside;
+}
