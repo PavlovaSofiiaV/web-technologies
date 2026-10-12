@@ -1,0 +1,42 @@
+*{
+    text-align: center;
+    line-height: 10px;
+}
+.recipe-card {
+    border: 2px solid #6b7ab3;
+    padding: 0px 40px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.main-title{
+    color: red;
+}
+.second-title{
+    font-style: italic;
+    line-height: 50px;
+}
+.name{
+    font-weight: bold;
+
+}
+.underline{
+    text-decoration: underline;
+}
+.ingredient-name {
+    font-weight: bold;
+}
+.strikethrough {
+    text-decoration: line-through;
+}
+.colorbackground{
+    background: yellow;
+}
+.green-line {
+    width: 75%;
+    height: 4px;
+    background-color: #008000;
+}
+.footer{
+    font-style: italic;
+    line-height: 1.4;
+}
