@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+    background-color: #f8d7e5;
+    color: #4a2c3a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+}
+
+legend {
+    color: #ad1457;
+    font-family: "Lobster", Georgia, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+fieldset {
+    border: 2px dashed #c2185b;
+    color: #6a1b3d;
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+input, select, textarea {
+    background-color: #ffffff;
+    color: #3b1a2a;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #fff3c4;
+}
+
+button {
+    background-color: #c2185b;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+::selection {
+    background-color: #c2185b;
+    color: #ffffff;
+}
