@@ -1,0 +1,59 @@
+/* 1. span у p.text-background (нащадок: клас + тег) */
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 2. span у .text-background, що лежить у div (нащадок: тег + клас + тег) */
+div .text-background span {
+    background-color: yellow;
+}
+
+/* 3. span у span (нащадок: два теги) */
+span span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+/* 4. span у span у нумерованому списку (нащадок: три теги) */
+ol span span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* 5. p – прямий нащадок section (дочірній: два теги) */
+section > p {
+    text-shadow: 3px 3px 5px #e06666;
+    text-indent: 50px;
+}
+
+/* 6. ul – прямий нащадок li: маркер-зображення (дочірній: два теги) */
+li > ul {
+    list-style-image: url("4.jpg");
+}
+
+/* 7. p.text-background – прямий нащадок div (дочірній: тег + клас) */
+div > .text-background {
+    word-spacing: 50px;
+}
+
+/* 8. p – прямий нащадок div.text-bold (дочірній: клас + тег) */
+.text-bold > p {
+    font-weight: bold;
+}
+
+/* 9. p у section, що є прямим нащадком .text-bold (дочірній: клас + два теги) */
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+/* 10. p відразу після img (наступний сусід: два теги) */
+img + p {
+    background-color: brown;
+}
+
+/* 11. усі p після section на тому ж рівні (усі сусіди: два теги) */
+section ~ p {
+    color: red;
+}
