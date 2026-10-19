@@ -1,0 +1,60 @@
+table {
+    width: 800px;
+    margin: 20px;
+    border-collapse: collapse;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+}
+
+th, td {
+    width: 20%;
+    border: 2px solid white;
+}
+
+th {
+    height: 80px;
+    color: white;
+    font-size: 22px;
+}
+
+th:nth-child(1) {
+    background-color: #fce4ec;
+    font-size: 18px;
+}
+
+th:nth-child(2) {
+    background-color: #f8bbd0;
+}
+
+th:nth-child(3) {
+    background-color: #f48fb1;
+}
+
+th:nth-child(4) {
+    background-color: #c2185b;
+}
+
+th:nth-child(5) {
+    background-color: #880e4f;
+}
+
+td {
+    height: 70px;
+    font-size: 24px;
+    color: #444444;
+}
+
+td:first-child {
+    background-color: #e0558a;
+    color: white;
+    font-size: 26px;
+}
+
+/* Рядки чергуються (td + td - усі клітинки, крім першої) */
+tbody tr:nth-child(odd) td + td {
+    background-color: #f8bbd0;
+}
+
+tbody tr:nth-child(even) td + td {
+    background-color: #fce4ec;
+}
