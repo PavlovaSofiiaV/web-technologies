@@ -1,0 +1,61 @@
+body{
+    background-color: pink;
+}
+
+div{
+    width: 300px;
+    padding: 20px;
+    border: 5px solid white;
+    display: inline-block;
+    margin: 20px;
+
+}
+div:nth-of-type(1){
+    box-sizing: content-box;
+}
+
+div:nth-of-type(2){
+    box-sizing: border-box;
+}
+
+div:nth-of-type(n+3){
+    max-height: 80px;
+    border: 2px solid;
+    width: 400px;
+    margin-bottom: 80px;
+
+}
+div:nth-of-type(3){
+    overflow: visible;
+}
+div:nth-of-type(4){
+    overflow: hidden;
+}
+div:nth-of-type(5){
+    overflow: scroll;
+}
+div:nth-of-type(6){
+    overflow: auto;
+}
+ul {
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    display: block;
+    padding: 10px 20px;
+}
+/*
+  Четвертий пункт меню приховано через display: none.
+  Різниця з іншими способами:
+  display: none - елемент повністю видаляється з потоку, місце не
+  займається, сторінка виглядає так, ніби його немає;
+  visibility: hidden - елемент невидимий, але місце під ним залишається;
+  opacity: 0 - елемент прозорий, місце залишається, і на нього можна клікнути.
+*/
+li:nth-child(4) {
+    display: none;
+}
