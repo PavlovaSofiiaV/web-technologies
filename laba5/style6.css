@@ -1,0 +1,85 @@
+body {
+    background-color: #1b2a41;
+    background-image: url('6/1.1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+/* Якщо вікно браузера стає вужчим за min-width (320px),
+   контейнер припиняє стискатися далі й зберігає фіксовану ширину 320px.
+   Внаслідок цього він виходить за межі екрана і в браузері з'являється
+   горизонтальна смуга прокручування (скроллбар). */
+section{
+    display: inline;
+    width: 200px;
+    height: 100px;
+    background-color: #e0558a;
+    /* Для рядкових елементів width і height не діють,
+  тому section з display: inline має розмір лише за вмістом.*/
+}
+span{
+    display: block;
+    width: 150px;
+    margin: 5px 0px;
+    background-color: #e0558a;
+    /* span з display: block - width діє, елементи йдуть стовпцем */
+}
+.repeat{
+    display: inline-block;
+    border: 3px solid deeppink;
+    width: 205px;
+    height: 200px;
+    margin-bottom: 10px;
+    background-image: url('6/2.jpg');
+}
+.rep-x     { background-repeat: repeat-x; } /* Повторюється лише по горизонталі (X) */
+.rep-y     { background-repeat: repeat-y; } /* Повторюється лише по вертикалі (Y) */
+.rep-space { background-repeat: space; }    /* Повторення з рівномірними відступами */
+.rep-round { background-repeat: round; }    /* Повторення з масштабуванням */
+/*space - картинки не обрізаються, а між ними додається порожній простір;
+  round - картинки трохи розтягуються або стискаються,
+  щоб у блок помістилося ціле число повторень.*/
+
+.size{
+    width: 300px;
+    height: 200px;
+    border: 2px solid;
+    display: inline-block;
+    background-image: url('6/3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.size1{
+    background-size: contain;
+}
+.size2{
+    background-size: cover;
+}
+.attachment{
+    max-height: 150px;
+    overflow: auto;
+    background-image: url('6/5.jpg');
+    margin-bottom: 10px;
+}
+.attach1{
+    background-attachment: scroll;
+}
+.attach2{
+    background-attachment: local;
+}
+/*
+  scroll - фон прив'язаний до самого блоку і не рухається,
+  коли всередині блоку прокручується текст.
+  local - фон прив'язаний до вмісту, тому прокручується разом з текстом.
+*/
